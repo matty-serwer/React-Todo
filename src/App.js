@@ -53,7 +53,7 @@ class App extends React.Component {
   };
 
   clearTasks = () => {
-    this.setState({tasks: []});
+    this.setState({tasks: this.state.tasks.filter(task =>(!task.completed))});
     console.log('sup');
   };
 
